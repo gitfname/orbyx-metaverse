@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbyxMetaverse 0.0.2</title>
+    <script src="./aframe.io_releases_1.4.0_aframe.min.js"></script>
+    <script src="./aframe-environment-component.min.js"></script>
+    <script src="./aframe-template-component.min.js"></script>
+    <script src="aframe-layout-component.min.js"></script>
+    <script src="aframe-event-set-component.min.js"></script>
+    <script src="aframe-proxy-event-component.min.js"></script>
+    <!-- <script src="aframe-fps-counter-component.min.js"></script> -->
+
+    <!-- templates -->
+    <script id="plane" type="text/html">
+        <a-entity
+        class="link"
+        geometry="primitive: plane; width: 1; height: 1;"
+        material="shader: flat; src: ${thumb};"
+        sound="on: click; src: #click-sound;"
+        event-set__mouseenter="scale: 1.1 1.1 1.1"
+        event-set__mouseleave="scale: 1 1 1"
+        event-set__click="_target: #sky; _delay: 300; material.src: ${src}"
+        proxy-event="event: click; to: #sky; as: fade;"
+        ></a-entity>
+    </script>
+</head>
+
+<body>
+
+    <a-scene>
+
+        <!-- <a-entity fps-counter></a-entity> -->
+
+        <a-assets>
+            <!-- sounds -->
+            <audio src="./click.ogg" id="click-sound"></audio>
+
+            <!-- thumbs -->
+            <img src="./thumb-city.jpg" id="city-thumb">
+            <img src="./thumb-cubes.jpg" id="cubes-thumb">
+            <img src="./thumb-sechelt.jpg" id="sechelt-thumb">
+
+            <!-- sky backgrounds -->
+            <img src="./city.jpg" id="city-sky">
+            <img src="./cubes.jpg" id="cubes-sky">
+            <img src="./sechelt.jpg" id="sechelt-sky">
+
+            <img src="daniel-salcius-9E_G4DSWIUU-unsplash.jpg" id="sky">
+
+            <!-- <a-asset-item id="toyota" src="models/toyota/scene.gltf"></a-asset-item>
+            <a-asset-item id="canadian-city" src="models/canadian-city/scene.gltf"></a-asset-item> -->
+            <!-- <a-asset-item id="city-1" src="models/city-1/scene.gltf"></a-asset-item> -->
+            <!-- <a-asset-item id="city-2" src="models/city-2/scene.gltf"></a-asset-item> -->
+            <!-- <a-asset-item id="city-3" src="models/city-3/scene.gltf"></a-asset-item> -->
+            <a-asset-item id="city-4" src="models/city-4/scene.gltf"></a-asset-item>
+        </a-assets>
+
+
+        <!-- <a-sky
+        id="sky"
+        radius="10"
+        src="#city-sky"
+        animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade;"
+        animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade;"
+        ></a-sky>
+
+        <a-entity id="links" layout="type: line; margin: 1.25" position="1 1 -2">
+            <a-entity data-src="#city-sky" data-thumb="#city-thumb" template="src: #plane"></a-entity>
+            <a-entity data-src="#cubes-sky" data-thumb="#cubes-thumb" template="src: #plane"></a-entity>
+            <a-entity data-src="#sechelt-sky" data-thumb="#sechelt-thumb" template="src: #plane"></a-entity>
+        </a-entity> -->
+
+        <a-entity gltf-model="#city-4" scale="2.5 2.5 2.5" position="-7 -2.7 -4"></a-entity>
+
+        <a-sky src="#sky"></a-sky>
+
+        <a-camera>
+            <a-cursor
+            id="curosr"
+            animation__click="property: scale; from: 1 1 1; to: 0.8 0.8 0.8; easing: easeInCubic; dur: 120; startEvents: click;"
+            animation__clickreset="property: scale; from: 0.8 0.8 0.8; to: 1 1 1; dur: 120; easing: easeInCubic; startEvents: animationcomplete__click;"
+            ></a-cursor>
+        </a-camera>
+
+        <!-- <a-light type="ambient" color="#FFFFFF"></a-light> -->
+
+    </a-scene>
+
+</body>
+
+</html>
