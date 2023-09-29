@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Billboard Sign - Standard
+* source:	https://sketchfab.com/3d-models/low-poly-billboard-sign-standard-269d489f468c430da74ed4921ee6361d
+* author:	JeffK (https://sketchfab.com/jeffkolada)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Billboard Sign - Standard" (https://sketchfab.com/3d-models/low-poly-billboard-sign-standard-269d489f468c430da74ed4921ee6361d) by JeffK (https://sketchfab.com/jeffkolada) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

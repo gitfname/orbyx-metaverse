@@ -11,7 +11,7 @@
     <script src="aframe-layout-component.min.js"></script>
     <script src="aframe-event-set-component.min.js"></script>
     <script src="aframe-proxy-event-component.min.js"></script>
-    <!-- <script src="aframe-fps-counter-component.min.js"></script> -->
+    <script src="aframe-fps-counter-component.min.js"></script>
 
     <!-- templates -->
     <script id="plane" type="text/html">
@@ -32,7 +32,7 @@
 
     <a-scene>
 
-        <!-- <a-entity fps-counter></a-entity> -->
+        <a-entity fps-counter></a-entity>
 
         <a-assets>
             <!-- sounds -->
@@ -56,6 +56,9 @@
             <!-- <a-asset-item id="city-2" src="models/city-2/scene.gltf"></a-asset-item> -->
             <!-- <a-asset-item id="city-3" src="models/city-3/scene.gltf"></a-asset-item> -->
             <a-asset-item id="city-4" src="models/city-4/scene.gltf"></a-asset-item>
+            <a-asset-item id="female-1" src="models/bodies/female/female-1/scene.gltf"></a-asset-item>
+            <a-asset-item id="aqua-wizard" src="models/bodies/female/aqua-wizard/scene.gltf"></a-asset-item>
+            <a-asset-item id="billboard" src="models/billboard/billboard-3/scene.gltf"></a-asset-item>
         </a-assets>
 
 
@@ -74,6 +77,13 @@
         </a-entity> -->
 
         <a-entity gltf-model="#city-4" scale="2.5 2.5 2.5" position="-7 -2.7 -4"></a-entity>
+
+        <a-entity gltf-model="#female-1" scale="3.3 3.3 3.3" position="6 -1.5 2" rotation="0 -90 0"></a-entity>
+
+        <a-entity gltf-model="#aqua-wizard" scale="3.3 3.3 3.3" position="38 6.1 -19" rotation="0 -180 0"></a-entity>
+
+        <a-entity gltf-model="#billboard" scale="0.8 0.8 0.8" position="20 -3.3 58" rotation="0 -140 0"></a-entity>
+
 
         <a-sky src="#sky"></a-sky>
 

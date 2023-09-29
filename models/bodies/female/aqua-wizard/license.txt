@@ -1,0 +1,11 @@
+Model Information:
+* title:	Aqua_Wizard
+* source:	https://sketchfab.com/3d-models/aqua-wizard-7971a02a6dc14573b8a21d30d2fec4c8
+* author:	sindyaev (https://sketchfab.com/sindyaev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Aqua_Wizard" (https://sketchfab.com/3d-models/aqua-wizard-7971a02a6dc14573b8a21d30d2fec4c8) by sindyaev (https://sketchfab.com/sindyaev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

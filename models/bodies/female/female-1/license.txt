@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly Female Body (Stylized)
+* source:	https://sketchfab.com/3d-models/lowpoly-female-body-stylized-57e2dbcff0db468db02ac712eae59070
+* author:	Leafar (https://sketchfab.com/leafar112)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly Female Body (Stylized)" (https://sketchfab.com/3d-models/lowpoly-female-body-stylized-57e2dbcff0db468db02ac712eae59070) by Leafar (https://sketchfab.com/leafar112) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
